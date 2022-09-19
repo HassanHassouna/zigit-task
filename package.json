@@ -1,7 +1,6 @@
 {
   "name": "zigit-task",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
@@ -27,5 +26,7 @@
     "mysql2": "^2.3.3",
     "pg": "^8.8.0",
     "sequelize": "^6.23.0"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }

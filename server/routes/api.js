@@ -1,11 +1,12 @@
 const express = require("express")
 const router = express.Router()
-const user = require("./car")
-const project = require("./reservation")
-const comment = require("./user")
+const user = require("./user")
+const project = require("./projects")
+const comment = require("./comments")
+const auth = require("../middleware/auth")
 
-router.use("/user", user)
-router.use("/project", project)
-router.use("/comment", comment)
+router.use("/api/user", auth, user)
+router.use("/api/project", project)
+router.use("/api/comment", comment)
 
 module.exports = router

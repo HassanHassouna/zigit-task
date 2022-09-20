@@ -18,8 +18,8 @@ module.exports = (sequelize, DataTypes) => {
   Project.init(
     {
       projectName: DataTypes.STRING,
-      url: DataTypes.STRING,
-      photoUrl: DataTypes.STRING,
+      projectUrl: DataTypes.STRING,
+      pictureUrl: DataTypes.STRING,
       status: DataTypes.STRING,
       endDate: DataTypes.DATE,
     },

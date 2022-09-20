@@ -2,7 +2,7 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('Projects', {
-      project_id: {
+      id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
@@ -11,10 +11,10 @@ module.exports = {
       projectName: {
         type: Sequelize.STRING
       },
-      url: {
+      projectUrl: {
         type: Sequelize.STRING
       },
-      photoUrl: {
+      pictureUrl: {
         type: Sequelize.STRING
       },
       status: {
